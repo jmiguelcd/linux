@@ -101,7 +101,11 @@ El formato son 5 espacios: `Minuto Hora Día Mes Día_Semana`
 ## 5. Tarea: Transferencia y Verificación en Windows 🪟 (o MacOS)
 Vamos a descargar FileZilla, de acuerdo a tu sistema operativo y version:
 
-https://filezilla-project.org/download.php
+[go](http://stackoverflow.com](https://filezilla-project.org/download.php){:target="_blank" rel="noopener"}
+
+
+[Stackoverflow The Key](https://stackoverflow.blog/2021/03/31/the-key-copy-paste/){:target="_blank" rel="noopener"}
+
 
 ## 6. Tarea: Transferencia y Verificación en Windows 🪟 (o MacOS)
 

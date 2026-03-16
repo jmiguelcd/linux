@@ -2,9 +2,10 @@
 
 ## 1. El Editor Nano
 Para abrir un archivo nuevo, escribe:
-\`\`\`bash
-nano mi_script.sh
-\`\`\`
+```bash
+#!/bin/bash
+echo "Hola, clase de ciberseguridad"
+```
 ![Interfaz de Nano](img/nano_ejemplo.png)
 
 ## 2. El Script de Respaldo

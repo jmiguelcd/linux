@@ -1,18 +1,46 @@
-# Manual de Automatización en Linux 🐧
+# Manual de Nano en Linux 🐧
 
-## 1. El Editor Nano
-Para abrir un archivo nuevo, escribe:
-```bash
-#!/bin/bash
-echo "Hola, clase de ciberseguridad"
+## 1. Crear una carpeta de trabajo y crear un archivo nuevo con Nano
+El comando mkdir, es para crear una carpeta.
+Para abrir o crear un archivo, basta con llamar a nano.
+
+Copia y pega estos comandos en terminal:
 ```
-![Interfaz de Nano](img/nano_ejemplo.png)
+sudo mkdir /etc/ejercicio
+sudo nano /etc/ejercicio/ejercicio1.sh
+```
 
-## 2. El Script de Respaldo
-Copia este código dentro de tu archivo:
-
-\`\`\`bash
+Una vez dentro, pega este texto.
+```
 #!/bin/bash
-# Script de respaldo y limpieza
-...
-\`\`\`
+echo "Hola Mundo nano!"
+```
+
+## 2. Guardar archivo
+Debes presionar la combibacion de tecas:
+CTRL + x
+
+Luego, confirmas que quieres guardar con "y"
+
+Te preguntará donde guardar, por defecto te muestra la misma ubicación que abriste. Confirma presionando ENTER.
+
+## 3. Verificar y ejecuta el archivo
+
+Para verificar el contenido del archivo usaremos "cat"
+```
+cat /etc/ejercicio/ejercicio1.sh
+```
+
+Si grabaste correctamente, deberás ver esto:
+```
+cat /etc/ejercicio/ejercicio1.sh
+#!/bin/bash
+echo "Hola Mundo nano!"
+```
+
+Ahora, puedes ejecutar el archivo con este comando:
+```
+sudo sh /etc/ejercicio/ejercicio1.sh
+```
+
+El comando ` echo ` que utilizamos, sirve para imprimir en la pantalla un texto que desees mostrar.

@@ -98,3 +98,24 @@ El formato son 5 espacios: `Minuto Hora Día Mes Día_Semana`
 
 > **Nota de Ingeniería:** Al usar /bin/sh definimos explícitamente el intérprete, lo que garantiza que la tarea no dependa de las variables de entorno de la sesión de usuario.
 
+## 5. Tarea: Transferencia y Verificación en Windows 🪟
+
+Un respaldo no sirve de nada si no puedes recuperar la información. Tu tarea final es extraer el archivo generado y verificar su contenido en tu computadora personal.
+
+### Paso 1: Conexión mediante WinSCP (o similar)
+1. Abre **WinSCP** (o FileZilla) en tu computadora con Windows.
+2. Conéctate a tu servidor Linux usando la IP, tu usuario y contraseña. Asegúrate de usar el protocolo **SFTP** (puerto 22).
+3. En el panel derecho (el servidor Linux), navega hasta la ruta: `/ejercicio/almacenamiento`.
+
+### Paso 2: Descarga del respaldo
+1. Busca el archivo con extensión `.zip` que generó tu script.
+2. Arrástralo hacia una carpeta en tu computadora (panel izquierdo).
+3. Si el sistema te pide permisos, recuerda que el archivo fue creado por `root`, así que asegúrate de tener los privilegios necesarios para leerlo.
+
+### Paso 3: Verificación final
+1. En tu Windows, busca el archivo descargado.
+2. Dale clic derecho y selecciona **"Extraer todo..."**.
+3. Verifica que dentro de la carpeta extraída aparezcan los archivos originales: `archivo1.txt` y `archivo2.txt`.
+
+> **Recuerda:** Deberás sacar capturas que lograste el paso 5, subir a la tarea en ClassRoom
+

@@ -1,4 +1,7 @@
 # Automatización de Respaldos con Cron 🚀
+> **Autor:** Ing. Jose Miguel Cabrera
+
+> **Fecha:** 16 de marzo de 2026
 
 Aprenderemos a crear un respaldo compatible con Windows y a programar el Linux para que lo ejecute automáticamente.
 

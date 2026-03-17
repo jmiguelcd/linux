@@ -1,6 +1,6 @@
 # Automatización de Respaldos con Cron 🚀
 
-Aprenderemos a crear un respaldo compatible con Windows y a programar el linux para que lo ejecute automáticamente.
+Aprenderemos a crear un respaldo compatible con Windows y a programar el Linux para que lo ejecute automáticamente.
 
 ## 1. Instalación de herramientas
 No todos los sistemas Linux vienen con la herramienta de compresión ZIP instalada por defecto. Vamos a instalarla para asegurar que nuestro script funcione.
@@ -45,7 +45,7 @@ DIA_HOY=$(date +%d)
 
 # --- 2. PREPARACIÓN ---
 # Si la carpeta de destino no existe, la creamos
-sudo mkdir -p $DESTINO
+mkdir -p $DESTINO
 
 # --- 3. CREAR EL RESPALDO ---
 # Usamos zip -r (recursivo) para incluir todo lo que hay dentro
@@ -102,7 +102,7 @@ El formato son 5 espacios: `Minuto Hora Día Mes Día_Semana`
 > **Nota de Ingeniería:** Al usar /bin/sh definimos explícitamente el intérprete, lo que garantiza que la tarea no dependa de las variables de entorno de la sesión de usuario.
 
 ## 5. Descargar software para Windows o MacOS
-Vamos a descargar FileZilla, de acuerdo a tu sistema operativo y version:
+Vamos a descargar FileZilla, de acuerdo a tu sistema operativo y versión:
 
 *(Nota: Presiona la tecla **Ctrl + Clic** sobre el enlace para abrirlo en una nueva pestaña y no perder este manual).*
 

@@ -107,25 +107,30 @@ https://filezilla-project.org/download.php
 
 Luego de descargar, instala y abre el programa.
 
-## 6. Tarea: Transferencia y Verificación en Windows 🪟 (o MacOS)
+## 6. Transferencia y Verificación en Windows 🪟 (o MacOS)
 
 Un respaldo no sirve de nada si no puedes recuperar la información. Tu tarea final es extraer el archivo generado y verificar su contenido en tu computadora personal.
 
-### Paso 1: Conexión mediante WinSCP (o similar)
-1. Abre **FileZilla** (o WinSCP o el software similar de tu preferencia) en tu computadora con Windows (o MacOS).
-2. Conéctate a tu servidor Linux usando la IP, tu usuario y contraseña. Asegúrate de usar el protocolo **SFTP** (puerto 22).
-3. En el panel derecho (el servidor Linux), navega hasta la ruta: `/ejercicio/almacenamiento`.
+### Paso 1: Conexión mediante FileZilla
+Abre FileZilla en tu computadora. En la barra superior de "Conexión rápida", llena los campos exactamente así:
+
+* **Servidor:** Escribe `sftp://` seguido de la IP de tu servidor Linux (Ejemplo: `sftp://192.168.1.50`).
+* **Nombre de usuario:** Tu usuario de Linux (Ejemplo: `root` o tu usuario administrador).
+* **Contraseña:** La contraseña de tu servidor.
+* **Puerto:** Escribe `22` (Este paso es obligatorio para conectarse por SFTP de forma segura).
+* Haz clic en **Conexión rápida**.
 
 ### Paso 2: Descarga del respaldo
-1. Busca el archivo con extensión `.zip` que generó tu script.
-2. Arrástralo hacia una carpeta en tu computadora (panel izquierdo).
-3. Si el sistema te pide permisos, recuerda que el archivo fue creado por `root`, así que asegúrate de tener los privilegios necesarios para leerlo.
+1. En el panel derecho (Sitio remoto), navega hasta la ruta: `/ejercicio/almacenamiento`.
+2. Busca el archivo con extensión `.zip` que generó tu script.
+3. En el panel izquierdo (Sitio local), elige la carpeta de tu computadora donde quieres guardarlo.
+4. Haz doble clic en el archivo `.zip` (panel derecho) para que comience la descarga.
 
 ### Paso 3: Verificación final
-1. En tu Windows o MacOS, busca el archivo descargado.
-2. Dale clic derecho y selecciona **"Extraer todo..."**.
+1. En tu computadora, ve a la carpeta donde descargaste el archivo.
+2. Dale clic derecho y selecciona **Extraer todo...** (o doble clic si usas MacOS).
 3. Verifica que dentro de la carpeta extraída aparezcan los archivos originales: `archivo1.txt` y `archivo2.txt`.
 
-> **Recuerda:** Deberás sacar capturas que lograste el paso 5, subir a la tarea en ClassRoom
+> **Recuerda:** Deberás sacar una captura de pantalla donde demuestres que lograste este último paso y subirla a la tarea en ClassRoom.
 
 

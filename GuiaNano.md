@@ -1,4 +1,7 @@
 # Manual de Nano en Linux 🐧
+> **Autor:** Ing. Jose Miguel Cabrera
+
+> **Fecha:** 16 de marzo de 2026
 
 ## 1. Crear una carpeta de trabajo y crear un archivo nuevo con Nano
 El comando mkdir, es para crear una carpeta.

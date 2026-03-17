@@ -17,12 +17,15 @@ sudo apt install zip -y
 ## 2. Creación del Script de Respaldo Profesional
 Vamos a crear un nuevo script que use el formato `.zip`. Este archivo será guardado en una carpeta temporal y se nombrará automáticamente con la fecha y hora.
 
-### Paso 1: Crea carpeta que vamos a respaldar, y crear el archivo con el script
+### Paso 1: Crea carpeta que vamos a respaldar, creamos archivos de prueba y el archivo del script
 ```bash
-sudo mkdir /ejercicio/backup
-sudo echo "Archivo de prueba 1" > /ejercicio/backup/archivo1.txt
-sudo echo "Archivo de prueba 2" > /ejercicio/backup/archivo2.txt
-sudo mkdir /ejercicio/almacenamiento
+sudo mkdir -p /ejercicio/backup
+sudo mkdir -p /ejercicio/almacenamiento
+
+# Creamos los archivos de prueba usando tee
+echo "Archivo de prueba 1" | sudo tee /ejercicio/backup/archivo1.txt
+echo "Archivo de prueba 2" | sudo tee /ejercicio/backup/archivo2.txt
+
 sudo nano /ejercicio/respaldo.sh
 ```
 
@@ -98,7 +101,7 @@ El formato son 5 espacios: `Minuto Hora Día Mes Día_Semana`
 
 > **Nota de Ingeniería:** Al usar /bin/sh definimos explícitamente el intérprete, lo que garantiza que la tarea no dependa de las variables de entorno de la sesión de usuario.
 
-## 5. Tarea: Transferencia y Verificación en Windows 🪟 (o MacOS)
+## 5. Descargar software para Windows o MacOS
 Vamos a descargar FileZilla, de acuerdo a tu sistema operativo y version:
 
 *(Nota: Presiona la tecla **Ctrl + Clic** sobre el enlace para abrirlo en una nueva pestaña y no perder este manual).*

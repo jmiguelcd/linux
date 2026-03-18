@@ -36,7 +36,7 @@ sudo nano /ejercicio/respaldo.sh
 ```bash
 #!/bin/bash
 
-# --- 1. CONFIGURACIÓN ---
+# --- 1. CONFIGURACION ---
 # Carpeta que queremos proteger
 ORIGEN="/ejercicio/backup"
 # Carpeta donde se guardará el respaldo
@@ -46,7 +46,7 @@ NOMBRE="$(date +%Y%m%d_%H%M).zip"
 # Día del mes actual
 DIA_HOY=$(date +%d)
 
-# --- 2. PREPARACIÓN ---
+# --- 2. PREPARACION ---
 # Si la carpeta de destino no existe, la creamos
 mkdir -p $DESTINO
 
@@ -55,10 +55,10 @@ mkdir -p $DESTINO
 zip -r $DESTINO/$NOMBRE $ORIGEN
 echo "✅ Respaldo completado: $DESTINO/$NOMBRE"
 
-# --- 4. LIMPIEZA AUTOMÁTICA (Día 5) ---
-if [ "$DIA_HOY" == "05" ]; then
+# --- 4. LIMPIEZA AUTOMATICA (Dia 5) ---
+if [ "$DIA_HOY" = "05" ]; then
     echo "🧹 Hoy es día 5. Borrando archivos viejos para ahorrar espacio..."
-    # Busca archivos .zip con más de 30 días y los elimina
+    # Busca archivos .zip con más de 30 dias y los elimina
     find $DESTINO -name "*.zip" -mtime +30 -exec rm {} \;
     echo "✨ Limpieza terminada."
 else

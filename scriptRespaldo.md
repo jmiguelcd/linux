@@ -42,7 +42,7 @@ ORIGEN="/ejercicio/backup"
 # Carpeta donde se guardará el respaldo
 DESTINO="/ejercicio/almacenamiento"
 # Nombre del archivo con año, mes, día, hora y minuto
-NOMBRE="$(date +%Y%m%d_%H%M).zip"
+NOMBRE="$(date +%Y%m%d_%H%M%S).zip"
 # Día del mes actual
 DIA_HOY=$(date +%d)
 

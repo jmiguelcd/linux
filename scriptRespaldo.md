@@ -41,7 +41,7 @@ sudo nano /ejercicio/respaldo.sh
 ORIGEN="/ejercicio/backup"
 # Carpeta donde se guardará el respaldo
 DESTINO="/ejercicio/almacenamiento"
-# Nombre del archivo con año, mes, día, hora y minuto
+# Nombre del archivo con año, mes, día, hora, minuto y segundo
 NOMBRE="$(date +%Y%m%d_%H%M%S).zip"
 # Día del mes actual
 DIA_HOY=$(date +%d)

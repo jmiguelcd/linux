@@ -13,6 +13,7 @@ sudo apt install -y curl net-tools wget vim git gnupg2 software-properties-commo
 ## 2. Instalar Docker
 Ejecuta estos comandos
 ```
+su -
 curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh
 ```
 

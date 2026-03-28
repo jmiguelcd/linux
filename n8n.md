@@ -1,6 +1,6 @@
 # Manual instalacion n8n con Docker y Portainer
 > **Autor:** Ing. Jose Miguel Cabrera
-> **Fecha:** 16 de marzo de 2026
+> **Fecha:** 27 de Marzo de 2026
 
 ## 1. Actualizar librerías e instalar paquetes básicos
 Copia y pega estos comandos en terminal:

@@ -60,10 +60,33 @@ services:
       - POSTGRES_PASSWORD=password
       - REDIS_URL=redis://redis:6379
       - SECRET_KEY_BASE=vwif9gieJtxZ3FrvjnmWeBN9u4akgC69
-      - FRONTEND_URL=https://monitor-receptor-increasing-communication.trycloudflare.com
+      - FRONTEND_URL=https://fruits-exhibitions-alaska-tutorials.trycloudflare.com
+      - INSTALLATION_ENV=on-premise
+      - FORCE_SSL=true
     command: sh -c "bundle exec rails db:prepare && bundle exec rails s -p 3000 -b 0.0.0.0"
     ports:
       - "3000:3000"
+
+  worker:
+    image: chatwoot/chatwoot:latest
+    container_name: chatwoot-worker
+    restart: always
+    
+    depends_on:
+      - postgresql
+      - redis
+    environment:
+      - NODE_ENV=production
+      - POSTGRES_HOST=postgresql
+      - POSTGRES_DATABASE=chatwoot
+      - POSTGRES_USERNAME=postgres
+      - POSTGRES_PASSWORD=password
+      - REDIS_URL=redis://redis:6379
+      - SECRET_KEY_BASE=vwif9gieJtxZ3FrvjnmWeBN9u4akgC69
+      - FRONTEND_URL=https://fruits-exhibitions-alaska-tutorials.trycloudflare.com
+      - INSTALLATION_ENV=on-premise
+      - FORCE_SSL=true
+    command: bundle exec sidekiq -C config/sidekiq.yml
 
   tunnel:
     image: cloudflare/cloudflared:latest
